@@ -1,53 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Form</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- local CSS stylesheet -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- cloudflare font awesome stylesheet
+    <link rel="stylesheet" 
+          href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> --> 
+
+    <!-- font awesome kit code -->
+    <script src="https://kit.fontawesome.com/c68614edd0.js" crossorigin="anonymous"></script>
+
+    <title>Signin Form</title>
 </head>
 <body>
-    <form style="width: 300px;">
-        <div>
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email">
-        <br>
-        
-        <label for="password">Password:</label>
-        <input type="text" id="password" name="password">
-        <br>
-
-        <label for="username">Github Username:</label>
-        <input type="text" id="username" name="username">
+    <div id="wrapper">
+        <!-- the header and navigation -->
+        <div id="header">
+            <!-- <div id="navigation"> -->
+            <ul>
+                <!-- <li><a href="#">navigation1</a></li>
+                <li><a href="#">navigation2</a></li> -->
+            </ul>
         </div>
-
-        <p>       
-            <input type = "radio"
-                   name = "radSize"
-                   id = "sizeSmall"
-                   value = "small"
-                   checked = "checked" />
-            <label for = "sizeSmall">Enterprise</label>
-
-            <input type = "radio"
-                   name = "radSize"
-                   id = "sizeMed"
-                   value = "medium" />
-            <label for = "sizeMed">Pro</label>
-
-            <input type = "radio"
-                   name = "radSize"
-                   id = "sizeLarge"
-                   value = "large" />
-            <label for = "sizeLarge">Free</label>
-          </p>       
         
-          <p>
-              <input type = "checkbox"
-                  id = "remember"
-                  value = "remember" />
-              <label for = "remember">Remember Me</label>
-          </p>
+        <!-- the sidebar -->
+        <div id="sidebar">
+            <!-- <p>here is the sidebar</p> -->
+        </div>
+        
+        <!-- the content -->
+        <div id="content">
+            <form class="signin">
 
-      </form>
-</body>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email"">
+                    <br>
+                
+                    <label for="password">Password:</label>
+                    <input type="text" id="password" name="password">
+                    <br>
+        
+                    <label for="username">Github Username:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+        
+                <div>       
+                    <input type = "radio"
+                           name = "enterprise"
+                           id = "enterprise"
+                           value = "enterprise" />
+                    <label for = "enterprise">Enterprise</label>
+                    
+                    <input type = "radio"
+                           name = "pro"
+                           id = "pro"
+                           value = "pro" />
+                    <label for = "pro">Pro</label>
+        
+                    <input type = "radio"
+                           name = "free"
+                           id = "free"
+                           value = "free" />
+                    <label for = "free">Free</label>
+                </div>       
+                
+                <div>
+                    <input type = "checkbox"
+                           id = "remember"
+                           value = "remember" />
+                    <label for = "remember">Remember Me</label>
+                    <input type="submit" value="Submit">
+                </div>
+        
+              </form>
+        </div>
+        
+        <!-- the footer -->
+        <div id="footer">
+        <!-- <p>Here is the footer</p> -->
+        </div>
+        
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
